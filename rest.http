@@ -1,0 +1,50 @@
+GET http://localhost:5000
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjY3OWJlNTRlYmJhMjlmMjlkZjJhNzUiLCJpYXQiOjE2NTE0ODM0NzUsImV4cCI6MTY4MzA0MTA3NX0.Z_VFTp8MT71ty4aAk5K_6HrdNiHnbe81Xtz8uRwaxNo
+
+###
+
+POST http://localhost:5000/api/refresh-token
+Content-Type: application/json
+
+###
+
+POST  http://localhost:5000/api/register
+Content-Type: application/json
+
+{
+    "fullname": "QuyPham",
+    "email": "quypham.devplus@gmail.com",
+    "password": "123123"
+}
+
+###
+POST http://localhost:5000/api/login
+Content-Type: application/json
+
+{
+    "email": "Hr.devplus@gmail.com",
+    "password": "123123"
+}
+
+### 
+GET http://localhost:5000/get-list
+Content-Type: application/json
+Authorization:  123hbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjU4ZmFhMDQ4YmM3MDBmYWJkNDI1YmQiLCJpc0FkbWluIjpmYWxzZSwiaWF0IjoxNjUwMDA5OTc2LCJleHAiOjE2NTAwMDk5OTF9.UDVuY9toN4uFcABwMy6TcMqKqvSbFUCn4pHmsBEbOS0
+
+###
+DELETE  http://localhost:5000/api/logout
+Content-Type: application/json
+
+### 
+PATCH http://localhost:5000/api/update-campaign-disable
+Content-Type: application/json
+
+### 
+GET http://localhost:5000/api/count-campaign-of-month
+Content-Type: application/json
+
+###
+GET http://localhost:5000/api/count-profiles-of-month
+Content-Type: application/json
+
